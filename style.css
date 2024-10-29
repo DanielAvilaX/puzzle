@@ -1,0 +1,146 @@
+/* Estilo de fondo */
+body {
+    background-image: url('./fondo.avif'); /* Reemplaza con el nombre de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Estilos generales */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente para el contenedor */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 24px;
+}
+
+/* Contador de movimientos */
+.counter {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Estilo del tablero */
+#puzzle-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+}
+
+/* Estilo de las piezas del puzzle */
+.puzzle-piece {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4a90e2;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+}
+
+.puzzle-piece.empty {
+    background-color: #e0e0e0;
+}
+
+/* Estilo del botón */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    background-color: #388e3c;
+}
+
+/* Estilo del pie de página */
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Estilo del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1; /* Por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto; /* Centramos el modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ancho del modal */
+    max-width: 500px; /* Ancho máximo */
+    text-align: center;
+    border-radius: 10px; /* Esquinas redondeadas */
+}
+
+/* Estilo del botón de cerrar */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo de la firma */
+.signature-text {
+    font-size: 24px; /* Aumenta el tamaño de la firma */
+    font-weight: bold;
+    color: #333; /* Color del texto */
+}
